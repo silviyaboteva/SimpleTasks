@@ -1,0 +1,170 @@
+html,
+body {
+    font-family: 'Classic Round Demi', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+}
+
+.items-padding {
+    padding: 2.5rem 0;
+}
+
+.main-article {
+    padding: 2.0rem 0;
+}
+
+header {
+    background-color: #0F2D52;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header p {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: .75rem;
+    line-height: 150%;
+}
+
+.vertical-line {
+    border-left: 1px solid #000000;
+    height: 160px;
+}
+
+main .info-container {
+    text-align: right;
+}
+
+main .info-container p {
+    font-family: sans-serif;
+    font-size: .70rem;
+    margin: 0;
+}
+
+main a {
+    font-weight: bold;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main p {
+    font-size: .90rem;
+}
+
+main .btn-custom {
+    font-family: sans-serif;
+    font-size: .75rem;
+}
+
+
+/* Large devices (desktops, less than 75em) 1024px*/
+
+@media (max-width: 74.9em) {
+    html::after {
+        display: none;
+        content: 'mobile'
+    }
+    body::before {
+        content: "Large devices (desktops, less than 75em)";
+        display: block;
+        text-align: center;
+        background: rgba(0, 150, 150, 0.5);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: white;
+        z-index: 10000;
+    }
+    .container {
+        width: 70%;
+    }
+}
+
+
+/* Medium devices (tablets, less than 62em) 768px */
+
+@media (max-width: 61.9em) {
+    body::before {
+        content: "Medium devices (tablets, less than 62em)";
+    }
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+    header p {
+        font-size: .7rem;
+    }
+    main h1 {
+        font-size: 1.1rem;
+    }
+    main p {
+        font-size: .85rem;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 48em) 500px */
+
+@media (max-width: 47.9em) {
+    body::before {
+        content: "Small devices (landscape phones, less than 48em)";
+    }
+    .container {
+        width: 90%;
+    }
+    .items-padding {
+        padding: 1.5rem 0;
+    }
+    .header-img {
+        width: 60px;
+        height: 60px;
+    }
+    .vertical-line {
+        border-left: 0;
+        border-top: 1px solid #000000;
+        width: 100%;
+        height: 30px;
+    }
+    main .btn-custom {
+        font-family: sans-serif;
+        font-size: .65rem;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 34em) 320px*/
+
+@media (max-width: 33.9em) {
+    body::before {
+        content: "Extra small devices (portrait phones, less than 34em)";
+    }
+    .items-padding {
+        padding: .5rem 0;
+    }
+    .header-img {
+        width: 50px;
+        height: 50px;
+    }
+    header p {
+        font-size: .5rem;
+    }
+    main p {
+        font-size: .7rem;
+    }
+}
